@@ -16,7 +16,7 @@ const campgroundRoutes	= require('./routes/campgrounds'),
 			commentRoutes			= require('./routes/comments'),
 			indexRoutes				= require('./routes/index');
 
-			
+// Mongoose configuration			
 mongoose.connect('mongodb://localhost:27017/yelpcamp', { useNewUrlParser: true });
 app.use(BodyParser.urlencoded({extended: true}));
 app.set('view engine', 'ejs');
